@@ -7,4 +7,4 @@ namespace sycs4
     {
     sycs4::add();
     return 0;
-}
+ }
