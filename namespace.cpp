@@ -1,7 +1,7 @@
 #include<iostream>
 //using namespace std;
 int main()
-{
+{  
     int num1,num2,sum,avg;
    std::cout<<"enter two numbers";
    std::cin>>num1;
