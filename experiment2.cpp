@@ -3,7 +3,7 @@
 using namespace std;
 
 class Student {
-public:
+private:
     string name;
     int rollNo;
     float marks;
