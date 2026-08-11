@@ -32,6 +32,7 @@ int main() {
     Student s;
 
     s.inputDetails();
+    s.rollNo=100;
     s.displayDetails();
 
     return 0;
