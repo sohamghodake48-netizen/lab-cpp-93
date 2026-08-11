@@ -8,7 +8,7 @@ private:
     int rollNo;
     float marks;
 
-public:
+private:
     void inputDetails() {
         cout << "Enter Student Name: ";
         getline(cin >> ws, name);
@@ -19,7 +19,7 @@ public:
         cout << "Enter Marks: ";
         cin >> marks;
     }
-
+    public:
     void displayDetails() const {
         cout << "\n----- Student Details -----\n";
         cout << "Name      : " << name << endl;
@@ -31,8 +31,8 @@ public:
 int main() {
     Student s;
 
-    s.inputDetails();
-    s.rollNo=100;
+    //s.inputDetails();
+    //s.rollNo=100;
     s.displayDetails();
 
     return 0;
