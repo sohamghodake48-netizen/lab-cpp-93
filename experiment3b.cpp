@@ -8,14 +8,7 @@ private:
 public:
     Complex(int r = 0, int i = 0) : real(r), imag(i) {}
 
-    Complex add(const Complex &c) {
-        Complex t4;
-        t4.real=real+c.real;
-        t4.imag=real+c.imag;
-        real=t4.real;
-        imag=t4.imag;
-        return t4;
-    }
+    void add(const Complex &c)
 
     Complex subtract(const Complex &c) {
         return Complex(real - c.real, imag - c.imag);
@@ -29,7 +22,8 @@ public:
 int main() {
     Complex c1(4, 5), c2(8, 9);
    
-    Complex sum = c2.add(c1);
+    Complex sum = c2;
+    sum.add(c1);
     Complex diff = c2.subtract(c1);
 
     cout << "First Complex Number: ";
@@ -39,7 +33,7 @@ int main() {
     c2.display();
 
     cout << "Addition: ";
-    sum.display();
+    display();
 
     cout << "Subtraction: ";
     diff.display();
