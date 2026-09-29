@@ -5,32 +5,34 @@ class Distance
 {
 public:
     int feet, inch;
-
-    // Constructor
     Distance(int f, int i)
     {
         feet = f;
         inch = i;
     }
-
-    // Overloading unary (-) operator
-    void operator-()
-    {
-        feet--;
+    void operator-() {
+        feet=feet-3;
         inch--;
+
+        cout << "\nFeet & Inches (Decrement): "
+             << feet << "'" << inch;
+    }
+    void operator+()
+    {
+        feet=feet+3;
+        inch++;
 
         cout << "\nFeet & Inches (Decrement): "
              << feet << "'" << inch;
     }
 };
 
-// Main function
 int main()
 {
     Distance d1(8, 9);
-
-    // Use overloaded unary operator
     -d1;
+    Distance d2(10,11);
+    +d2;
 
     return 0;
 }
