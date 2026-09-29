@@ -68,7 +68,9 @@ public:
     void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            cout << "Deposited: Rs." << amount << endl;
+            balance
+             = amount-20;
+            cout << "Deposited:(20 Rs transaction cost) Rs." << amount << endl;
         }
     }
 
@@ -95,7 +97,7 @@ public:
 
 // Main Function
 int main() {
-    SavingAccount savings("Alice", 1001, 5000.0, 3.0);
+    SavingAccount savings("Alice", 1001, 5000.0,3.0);
     CheckingAccount checking("Bob", 1002, 3000.0, 20.0);
 
     // Operations on Savings Account
