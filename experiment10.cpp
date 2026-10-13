@@ -7,7 +7,7 @@ int main()
     ofstream fout;
     string line;
 
-    fout.open("sample.txt");
+    fout.open("sample.txt",ios::app);
 
     while (fout)
     {
@@ -22,7 +22,8 @@ int main()
     fout.close();
 
     ifstream fin;
-    fin.open("sample.txt");
+    fin.open("sample.txt
+        0");
 
     while (getline(fin, line))
     {
